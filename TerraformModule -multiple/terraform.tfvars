@@ -1,0 +1,19 @@
+resource_group_name = "RGsubba"
+location = "East US"
+storage_account_name = "subbastg1209"
+account_tier = "Standard"
+account_replication_type = "LRS"
+tags = {
+  Project = "Prod"
+}
+admin_username = "subba123"
+admin_password = "subba@123"
+vm_name = "subbaVM"
+vm_size = "Standard_DS1_v2"  # Changed to a valid Azure VM size
+image_publisher = "Canonical"  # Assuming Ubuntu from Canonical
+image_offer = "UbuntuServer"
+image_sku = "18.04-LTS"  # A specific known SKU
+image_version = "latest"
+os_disk_type = "Standard_LRS"
+vnet_address_space = ["10.0.0.0/16"]
+vnet_name = "subbvnet"
